@@ -24,7 +24,7 @@ body {
 }
 #navbar {
   text-align: center;
-  width: 31.25%;
+  width: 33%;
   margin: 0 auto;
   background-color: #36fa05; /*Light green */
   overflow: hidden;
@@ -64,18 +64,27 @@ li a:hover:not(.active-page) {
   clear: both;
   background-color: #1af0f0;
   color: #fff;
+
 }
-p.intro {
+.intro p {
   width: 50% auto;
   display: inline;
+  padding: 10px;
+  margin-bottom: 30px;
 }
+.intro hr {
+  margin-top: 20px;
+}
+
 h1 {
   font-family: Georgia, serif;
   font-weight: bold;
+  padding-top: 20px;
 }
 hr {
   border: 1px dotted red;
   border-radius: 1px;
+  margin-top: 20px;
 }
 #contact {
   font-family: fantasy;
