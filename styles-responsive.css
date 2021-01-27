@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+}
+
+.menu {
+  list-style-type: none;
+  /*margin: 0 auto;*/
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #36fa05; /*Light green */
+  border-bottom: 1px solid #bbb;
+  border-right:1px solid #bbb;
+  overflow: hidden;
+}
+
+.menu li {
+  float: left;
+  border-right:1px solid #bbb;
+
+}
+
+.menu li:last-of-type {
+  border-right: none;
+}
+
+li a {
+  text-decoration: none;
+  display: block;
+  padding: 20px 30px;
+}
+
+
+li a.active-page {
+  background-color: #930af5; /*purple*/
+  color: white;
+}
+
+li a:hover:not(.active-page) {
+  background-color: #AAA;
+  color: white;
+}
+
+.intro {
+  background-color: #1af0f0;
+  align-self: center;
+  flex-grow: 3;
+}
+
+.intro h1, .intro h2 {
+  padding: 10px;
+}
+
+.intro p {
+  padding: 20px;
+}
+
+#contact {
+  font-family: fantasy;
+  font-weight: bold;
+  font-size: 2em;
+  padding: 20px;
+  margin: 0;
+  color: blue;
+  text-align: center;
+  align-self: center;
+}
+
+#contact-list {
+  font-family: 'Times New Roman', serif;
+  color: blue;
+  height: auto;
+  align-self: center;
+  list-style-type: none;
+  padding-bottom: 20px;
+}
+
+#contact-list a {
+  padding: 0;
+}
+
+.projects {
+  color: white;
+  font-family: garamond, serif;
+  padding: 10px 10px;
+  padding-bottom: 20px;
+}
+
+.experience p {
+  font-family: 'Courier New', monospace;
+}
+
+a {
+  text-decoration: none;
+}
+.experience {
+  background-color: #f59b14;
+  padding:10px 10px;
+}
+
+.experience ol {
+  list-style-type: none;
+}
+
+.experience h2 {
+  padding: 10px;
+}
+
+.intro h2 {
+  font-family: times, serif;
+}
+ul.projects {
+  list-style-type: circle;
+  list-style-position: inside;
+  display: list-item;
+}
+
+#contact-list a {
+  display: inline;
+}
+
+@media only screen and (max-width: 400px) {
+  body {
+    background-color: #F09A9D; /* Red */
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .intro, .projects, .experience {
+    border-bottom: 1px dotted black;
+  }
+
+}
+
+@media only screen and (min-width: 401px) {
+  body {
+    background-color: #EEEEEE;
+  }
+  .menu li:last-of-type {
+    float: left;
+    border-right:1px solid #bbb;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .projects {
+    background-color: #7409ed; /*Purple*/
+
+  }
+
+}

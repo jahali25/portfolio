@@ -22,6 +22,10 @@ body {
   overflow: auto;*/
   overflow: hidden;
 }
+
+.menu li {
+  margin: 10px;
+}
 #navbar {
   text-align: center;
   width: 33%;
